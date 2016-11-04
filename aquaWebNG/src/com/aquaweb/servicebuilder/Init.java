@@ -22,6 +22,10 @@ public class Init {
 	
 	private static WebDriver wDriver;	
 	
+	public static WebDriver getDriver() {
+		return wDriver;
+	}
+
 	public static void createAndStartService(String service) throws IOException {
 		
 		switch(service){
@@ -47,6 +51,8 @@ public class Init {
 			ieService.start();
 			break;
 		}
+		
+		System.out.println("Service started for "+service);
 	}
 
 	public static void createAndStopService(String service) {
@@ -60,7 +66,9 @@ public class Init {
 		case "ie":
 			ieService.stop();
 			break;
-		}		
+		}
+		
+		System.out.println("Service stopped for "+service);
 	}
 		
 	public static void createDriver(String service) {
@@ -78,10 +86,12 @@ public class Init {
 			wDriver = new InternetExplorerDriver();
 			break;
 		}			
+		System.out.println("Driver running for "+service);
 	}
 
 	public static void quitDriver() {
 		wDriver.quit();
+		System.out.println("Driver quit");
 	}	
 
 }
