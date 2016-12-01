@@ -14,7 +14,6 @@ import org.openqa.selenium.WebDriver;
 import com.aquaweb.helper.Shared;
 import com.aquaweb.helper.Wait;
 import com.aquaweb.pageobjects.NavBar;
-import com.aquaweb.pageobjects.NavTree;
 import com.aquaweb.servicebuilder.Config;
 import com.aquaweb.servicebuilder.Init;
 

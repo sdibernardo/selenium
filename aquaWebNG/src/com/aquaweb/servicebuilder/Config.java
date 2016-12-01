@@ -8,9 +8,9 @@ public class Config {
 	private static String cdProp = "webdriver.chrome.driver";
 	private static String gdProp = "webdriver.gecko.driver";
 	private static String ieProp = "webdriver.ie.driver";
-	private static String cdPath = "C:/Program Files/Eclipse/Selenium/chromedriver.exe";
-	private static String gdPath = "C:/Program Files/Eclipse/Selenium/wires.exe";
-	private static String iePath = "C:/Program Files/Eclipse/Selenium/IEDriverServer.exe";
+	private static String cdPath = "D:/Programme/Eclipse/Selenium/driver/chromedriver.exe";
+	private static String gdPath = "D:/Programme/Eclipse/Selenium/driver/wires.exe";
+	private static String iePath = "D:/Programme/Eclipse/Selenium/driver/IEDriverServer.exe";
 	
 	
 	public static String getsBaseUrl() {
